@@ -5,14 +5,16 @@ const data = {
 }
 
 const getRandomStudent = () => {
-    const random = Math.floor(Math.random() * data.students.length);
+    const random = Math.floor(Math.random() * Array.length);
     return data.students[random];
 }
     
 
 
 const controlStudent = {
-    random : (req, res) => {
+    random : async (req, res) => {
+        const data = await Student.findAll();
+        console.log(data);
         const randomStudent = getRandomStudent();
         res.status(200).json({ stake: randomStudent });
     },
