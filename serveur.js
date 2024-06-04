@@ -4,7 +4,7 @@ const port = 3000
 const router = require('./routes/');
 const version = "v1"
 const db = require('./db/database')
-
+const cors = require("cors")
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
