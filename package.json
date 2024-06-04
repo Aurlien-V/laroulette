@@ -1,0 +1,27 @@
+{
+  "name": "laroulette",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon serveur.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aurlien-V/laroulette.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aurlien-V/laroulette/issues"
+  },
+  "homepage": "https://github.com/Aurlien-V/laroulette#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.3",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
+  }
+}
